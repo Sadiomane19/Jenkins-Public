@@ -1,0 +1,1100 @@
+credentials:
+  system:
+    domainCredentials:
+    - credentials:
+      - usernamePassword:
+          id: "b8279697-c86f-45c9-aa1e-4d811b7be976"
+          password: "{AQAAABAAAAAgs2DXdBYPMcqrKJsif+KPEDRqxil7P6wFfZpbPNmJwpd/p3Bk+Ztd5i+jcg7LBupq}"
+          scope: GLOBAL
+          username: "kyang14"
+      - usernamePassword:
+          id: "46a393b6-9537-4566-aa41-6214e5f4ccd3"
+          password: "{AQAAABAAAAAgAUCuYbkLkVLqjLpXCY0AbB99qoC7obnmopbPRJ1kiILQAVmqS5C+yt+pLg6OvVKo}"
+          scope: GLOBAL
+          username: "tliang3"
+      - usernamePassword:
+          id: "c333d096-b5c6-41f1-a2e6-888614ecbbd7"
+          password: "{AQAAABAAAAAQagUFxgWQ2X+QPJReYzQwTvdYC3OfxYTNXO+UUbHnRNE=}"
+          scope: GLOBAL
+          username: "sda-grp-ap-autobuild"
+      - usernamePassword:
+          description: "SVC_SDA_CVBDLCMbld1"
+          id: "SVC_SDA_CVBDLCMbld1"
+          password: "{AQAAABAAAAAQxxXaHZtvCNF29YBNR/SiGxzxSRMYnWiR3fniVz6b6fA=}"
+          scope: GLOBAL
+          username: "SVC_SDA_CVBDLCMbld1"
+      - usernamePassword:
+          id: "5ad6f459-0e26-40c6-a8be-3c7a4fc0226a"
+          password: "{AQAAABAAAAAg0nmThy1r8tZSR6IdNiuSpgoXjuGn8GRBl/whlM1IUJiNUYwUUTqq5ALfI3n2Mldp}"
+          scope: GLOBAL
+          username: "aleng"
+      - usernamePassword:
+          description: "TriggerCMJenkins"
+          id: "cb3a361e-79b4-46f8-ac9c-facebfa7481c"
+          password: "{AQAAABAAAAAgvIW9Khh81FDCh7zWDFmwDye+4ApXmR+/5ip7LbimSkJq7Dln0eCKNO9dQIPPHuoM}"
+          scope: GLOBAL
+          username: "n0531464"
+      - usernamePassword:
+          id: "681217cf-b68a-4203-b190-e6feaf688438"
+          password: "{AQAAABAAAAAgqqSs76R+T3pB6q3JbuoXEOam7wN9RqUZwxljJcOpoQ71KQkLjL2/bv+rR55XO5/A}"
+          scope: GLOBAL
+          username: "jjxu1"
+      - usernamePassword:
+          id: "9fda47c1-a652-4050-ab79-344079cf0396"
+          password: "{AQAAABAAAAAQcrdgoGWacA0iHeFzNk6eBxndNbzpH9t62oxETxgo2i0=}"
+          scope: GLOBAL
+          username: "kzhang4"
+      - usernamePassword:
+          description: "Service account 2"
+          id: "a840c862-64e7-4553-9a87-68f2d716f9e8"
+          password: "{AQAAABAAAAAQ5jfq2Vb6fe9azTvWQ65K7ujdZ5+dtr3LuEp+FRpt0iM=}"
+          scope: GLOBAL
+          username: "SVC_SDA_CVBDLCMbld2"
+    - credentials:
+      - usernamePassword:
+          id: "5d7ed5ac-f358-406f-a048-9428f4c52846"
+          password: "{AQAAABAAAAAQ+SoO+DS2bOXP2rBSMTSsyo8f6m/NDDaDigpD/odis34=}"
+          scope: GLOBAL
+          username: "kyxu"
+      - usernamePassword:
+          id: "3e9eff2a-a6ee-4883-8b8f-7f5f880f5977"
+          password: "{AQAAABAAAAAggX/d9wH4ga8Ve8pkCvwn11g9rZlJmnsVKC6esDNBFQtXH6R3knHeq3cZf0F9ahUV}"
+          scope: GLOBAL
+          username: "tjiang"
+      - usernamePassword:
+          description: "Used for modular software"
+          id: "svc_na_ftvpbuilder"
+          password: "{AQAAABAAAAAQ5QyiSpd3f9FfvhprmOvtQlWouXmA33Bt1yZdWOfkcrc=}"
+          scope: GLOBAL
+          username: "svc_na_ftvpbuilder"
+      domain:
+        name: "ra-int"
+jenkins:
+  agentProtocols:
+  - "JNLP4-connect"
+  - "Ping"
+  authorizationStrategy:
+    roleBased:
+      roles:
+        global:
+        - assignments:
+          - "G - DAE_COO_Users"
+          - "ktwbuild"
+          name: "admin"
+          pattern: ".*"
+          permissions:
+          - "Overall/Administer"
+  crumbIssuer:
+    standard:
+      excludeClientIPFromCrumb: false
+  disableRememberMe: false
+  disabledAdministrativeMonitors:
+  - "jenkins.security.QueueItemAuthenticatorMonitor"
+  labelAtoms:
+  - name: "RSLC"
+  - name: "RSLE"
+  - name: "USDLS5KAB02"
+  - name: "USMKEDLFTACB02"
+  - name: "USPULLCLIENTBM"
+  - name: "ascvbdali0103"
+  - name: "ascvbdali0115"
+  - name: "ascvbdali0117"
+  - name: "ascvbdali0118"
+  - name: "ascvbdali0119"
+  - name: "ascvbdali0120"
+  - name: "ascvbdali0126"
+  - name: "master"
+  - name: "nvsjcvpbld01"
+  - name: "nvsjcvpbld02"
+  - name: "nvussjc-signvm1"
+  - name: "terraformtest"
+  - name: "usdlctb02"
+  - name: "usdlftae01"
+  - name: "usdlftsplo01"
+  - name: "usdlftsplo02"
+  - name: "usdlpvcbtest"
+  - name: "usmkeccwb100"
+  - name: "usmkedlcbp1"
+  - name: "usmkedlcbp2"
+  - name: "usmkedlcfpb04"
+  - name: "usmkedlconb01"
+  - name: "usmkedlftgwb01"
+  - name: "usmkedlftgwb02"
+  - name: "usmkedlftmxb01"
+  - name: "usmkedlftvpb02"
+  - name: "usmkedlhseb01"
+  - name: "usmkedlhseb02"
+  - name: "usmkedljenkins"
+  - name: "usmkedlmub02"
+  - name: "usmkedlrsleb04"
+  - name: "usmkedlrsleb05"
+  - name: "usmkedlrsleb08"
+  - name: "usmkedlsscbb01"
+  - name: "usmkedltestb01"
+  - name: "usmkerslcb01"
+  markupFormatter: "plainText"
+  mode: NORMAL
+  myViewsTabBar: "standard"
+  nodes:
+  - permanent:
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      name: "USDLS5KAB02"
+      numExecutors: 4
+      remoteFS: "c:\\jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      name: "USMKEDLFTACB02"
+      numExecutors: 4
+      remoteFS: "c:\\Jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      labelString: "USPULLCLIENTBM"
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: true
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      mode: EXCLUSIVE
+      name: "USPULLCLIENTBM"
+      remoteFS: "C:\\Jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      labelString: "ascvbdali0103"
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: true
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      mode: EXCLUSIVE
+      name: "ascvbdali0103"
+      numExecutors: 4
+      remoteFS: "C:\\Jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      labelString: "ascvbdali0115"
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: true
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      mode: EXCLUSIVE
+      name: "ascvbdali0115"
+      numExecutors: 4
+      remoteFS: "C:\\Jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      labelString: "ascvbdali0117"
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: true
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      mode: EXCLUSIVE
+      name: "ascvbdali0117"
+      numExecutors: 4
+      remoteFS: "C:\\Jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      labelString: "ascvbdali0118"
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: true
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      mode: EXCLUSIVE
+      name: "ascvbdali0118"
+      numExecutors: 4
+      remoteFS: "C:\\Jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      labelString: "ascvbdali0119"
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: true
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      mode: EXCLUSIVE
+      name: "ascvbdali0119"
+      numExecutors: 4
+      remoteFS: "C:\\Jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      labelString: "ascvbdali0120"
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: true
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      name: "ascvbdali0120"
+      nodeDescription: "ccw build machine generated from template 1"
+      numExecutors: 2
+      remoteFS: "C:\\Jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      name: "ascvbdali0126"
+      numExecutors: 4
+      remoteFS: "c:\\Jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      labelString: "nvsjcvpbld01"
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      name: "nvsjcvpbld01"
+      numExecutors: 4
+      remoteFS: "C:\\Jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      name: "nvsjcvpbld02"
+      numExecutors: 4
+      remoteFS: "C:\\Jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      name: "nvussjc-signvm1"
+      remoteFS: "C:\\Jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      name: "terraformtest"
+      numExecutors: 5
+      remoteFS: "C:\\Jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      name: "usdlctb02"
+      numExecutors: 4
+      remoteFS: "c:\\jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      labelString: "usdlftae01"
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      name: "usdlftae01"
+      numExecutors: 5
+      remoteFS: "C:/jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      labelString: "usdlftsplo01"
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: true
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      mode: EXCLUSIVE
+      name: "usdlftsplo01"
+      numExecutors: 4
+      remoteFS: "C:\\Jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      labelString: "usdlftsplo02"
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: true
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      mode: EXCLUSIVE
+      name: "usdlftsplo02"
+      numExecutors: 4
+      remoteFS: "C:\\Jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      labelString: "usdlpvcbtest"
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: true
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      name: "usdlpvcbtest"
+      nodeDescription: "pvc build machine generated from template 3"
+      remoteFS: "C:\\Jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      launcher:
+        jnlp:
+          vmargs: "-Xmx1024m"
+          workDirSettings:
+            disabled: true
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      mode: EXCLUSIVE
+      name: "usmkeccwb100"
+      numExecutors: 4
+      remoteFS: "c:\\jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      name: "usmkedlcbp1"
+      numExecutors: 4
+      remoteFS: "c:\\jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      launcher:
+        ssh:
+          credentialsId: "a840c862-64e7-4553-9a87-68f2d716f9e8"
+          host: "usmkedlcbp1"
+          port: 22
+          sshHostKeyVerificationStrategy: "knownHostsFileKeyVerificationStrategy"
+      name: "usmkedlcbp2"
+      numExecutors: 4
+      remoteFS: "c:\\jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      name: "usmkedlcfpb04"
+      numExecutors: 4
+      remoteFS: "c:\\jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      name: "usmkedlconb01"
+      numExecutors: 4
+      remoteFS: "c:\\jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      launcher:
+        jnlp:
+          vmargs: "-Xmx1024m"
+          workDirSettings:
+            disabled: true
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      mode: EXCLUSIVE
+      name: "usmkedlftgwb01"
+      numExecutors: 4
+      remoteFS: "c:\\jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      labelString: "usmkedlftgwb02"
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      name: "usmkedlftgwb02"
+      remoteFS: "c:\\jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      name: "usmkedlftmxb01"
+      numExecutors: 4
+      remoteFS: "c:\\jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      name: "usmkedlftvpb02"
+      numExecutors: 4
+      remoteFS: "c:\\jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      launcher:
+        jnlp:
+          vmargs: "-Xmx1024m"
+          workDirSettings:
+            disabled: true
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      mode: EXCLUSIVE
+      name: "usmkedlhseb01"
+      numExecutors: 5
+      remoteFS: "c:\\jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      name: "usmkedlhseb02"
+      numExecutors: 5
+      remoteFS: "c:\\jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      name: "usmkedljenkins"
+      numExecutors: 4
+      remoteFS: "C:\\Jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      labelString: "usmkedlmub02"
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      name: "usmkedlmub02"
+      remoteFS: "C:\\Jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      name: "usmkedlrsleb04"
+      remoteFS: "C:\\Jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      name: "usmkedlrsleb05"
+      remoteFS: "C:\\Jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      labelString: "RSLE"
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      name: "usmkedlrsleb08"
+      numExecutors: 4
+      remoteFS: "C:\\Jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      labelString: "usmkedlsscbb01"
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: true
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      mode: EXCLUSIVE
+      name: "usmkedlsscbb01"
+      numExecutors: 4
+      remoteFS: "C:\\Jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      labelString: "usmkedltestb01"
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      name: "usmkedltestb01"
+      numExecutors: 5
+      remoteFS: "c:\\jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      labelString: "RSLC"
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      name: "usmkerslcb01"
+      numExecutors: 4
+      remoteFS: "C:\\Jenkins"
+      retentionStrategy: "always"
+  numExecutors: 12
+  primaryView:
+    all:
+      name: "all"
+  projectNamingStrategy: "standard"
+  quietPeriod: 5
+  remotingSecurity:
+    enabled: true
+  scmCheckoutRetryCount: 3
+  securityRealm:
+    activeDirectory:
+      customDomain: false
+      groupLookupStrategy: AUTO
+      removeIrrelevantGroups: false
+      startTls: true
+  slaveAgentPort: 0
+  updateCenter:
+    sites:
+    - id: "default"
+      url: "https://updates.jenkins.io/update-center.json"
+  views:
+  - list:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "lastSuccess"
+      - "lastFailure"
+      - "lastDuration"
+      - "buildButton"
+      - "builtOnColumn"
+      - "favoriteColumn"
+      jobNames:
+      - "CompareTool"
+      name: "CT"
+  - list:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "lastSuccess"
+      - "lastFailure"
+      - "lastDuration"
+      - "buildButton"
+      - "builtOnColumn"
+      - "favoriteColumn"
+      jobNames:
+      - "Common"
+      name: "Common"
+  - list:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "lastSuccess"
+      - "lastFailure"
+      - "lastDuration"
+      - "buildButton"
+      - "builtOnColumn"
+      jobNames:
+      - "AutoSetupBuildMachine"
+      - "ControlFlashPlus"
+      - "FTLinxDataBridge"
+      name: "ControlFlashPlus"
+  - multiJob:
+      columns:
+      - "statusColumn"
+      - "weatherColumn"
+      - "jobColumn"
+      - "lastSuccessColumn"
+      - "lastFailureColumn"
+      - "lastDurationColumn"
+      - "consoleColumn"
+      - "buildButton"
+      - "builtOnColumn"
+      description: "Created for FTAC v10.00 COO build"
+      jobNames:
+      - "FTAC/FTAC_10.00.00_Part1_CodeInstall_DontUse"
+      - "FTAC/FTAC_Multi_10.00_2020"
+      name: "FTAC"
+  - list:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "lastSuccess"
+      - "lastFailure"
+      - "lastDuration"
+      - "buildButton"
+      - "builtOnColumn"
+      jobNames:
+      - "FTAE"
+      - "FTAE/FTAECreateCCUpdatedFileListReport"
+      name: "FTAE"
+  - list:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "lastSuccess"
+      - "lastFailure"
+      - "lastDuration"
+      - "buildButton"
+      - "builtOnColumn"
+      jobNames:
+      - "FTGW"
+      name: "FTGW"
+  - list:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "lastSuccess"
+      - "lastFailure"
+      - "lastDuration"
+      - "buildButton"
+      - "builtOnColumn"
+      jobNames:
+      - "FTSP"
+      - "FTSP/FTSP_CI"
+      - "FTSP/FTSP_CI_Build"
+      name: "FTSP"
+  - list:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "lastSuccess"
+      - "lastFailure"
+      - "lastDuration"
+      - "buildButton"
+      - "builtOnColumn"
+      - "favoriteColumn"
+      jobNames:
+      - "FTTM"
+      name: "FTTM"
+  - list:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "lastSuccess"
+      - "lastFailure"
+      - "lastDuration"
+      - "buildButton"
+      - "builtOnColumn"
+      - "favoriteColumn"
+      jobNames:
+      - "FTMx"
+      - "FTTM"
+      - "ReportExport"
+      name: "FTTM_FTMx"
+  - list:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "lastSuccess"
+      - "lastFailure"
+      - "lastDuration"
+      - "buildButton"
+      - "builtOnColumn"
+      jobNames:
+      - "FTVP"
+      - "Trigger_FTVP_CodeAnalysis"
+      name: "FTVP"
+  - list:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "lastSuccess"
+      - "lastFailure"
+      - "lastDuration"
+      - "buildButton"
+      - "builtOnColumn"
+      jobNames:
+      - "FTVantagePoint"
+      - "FTVantagePoint_Build_v8.30"
+      - "FTVantagePoint_Component"
+      - "FTVantagePoint_Patch"
+      name: "FTVantagePoint"
+  - list:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "lastSuccess"
+      - "lastFailure"
+      - "lastDuration"
+      - "buildButton"
+      - "builtOnColumn"
+      jobNames:
+      - "FTView"
+      - "FTView/FTView_Common"
+      name: "FTView"
+  - list:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "lastSuccess"
+      - "lastFailure"
+      - "lastDuration"
+      - "buildButton"
+      - "builtOnColumn"
+      - "favoriteColumn"
+      jobNames:
+      - "FTHSE"
+      name: "HSE"
+  - list:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "lastSuccess"
+      - "lastFailure"
+      - "lastDuration"
+      - "buildButton"
+      - "builtOnColumn"
+      jobNames:
+      - "OPCUA"
+      name: "OPCUA"
+  - list:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "lastSuccess"
+      - "lastFailure"
+      - "lastDuration"
+      - "buildButton"
+      - "builtOnColumn"
+      jobNames:
+      - "RSLC"
+      name: "RSLC"
+  - list:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "lastSuccess"
+      - "lastFailure"
+      - "lastDuration"
+      - "buildButton"
+      - "builtOnColumn"
+      jobNames:
+      - "RSLE"
+      name: "RSLE"
+  - list:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "lastSuccess"
+      - "lastFailure"
+      - "lastDuration"
+      - "buildButton"
+      - "builtOnColumn"
+      - "favoriteColumn"
+      jobNames:
+      - "ReportExport"
+      name: "ReportExport"
+  - list:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "lastSuccess"
+      - "lastFailure"
+      - "lastDuration"
+      - "buildButton"
+      - "builtOnColumn"
+      - "favoriteColumn"
+      jobNames:
+      - "S5KArchitect"
+      name: "S5KA"
+  - list:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "lastSuccess"
+      - "lastFailure"
+      - "lastDuration"
+      - "buildButton"
+      - "builtOnColumn"
+      - "favoriteColumn"
+      jobNames:
+      - "SSCB"
+      name: "SSCB"
+  - all:
+      name: "all"
+  viewsTabBar: "standard"
+security:
+  apiToken:
+    creationOfLegacyTokenEnabled: false
+    tokenGenerationOnCreationEnabled: false
+    usageStatisticsEnabled: true
+  copyartifact:
+    mode: PRODUCTION
+  envInject:
+    enableLoadingFromMaster: false
+    enablePermissions: false
+    hideInjectedVars: false
+  globalJobDslSecurityConfiguration:
+    useScriptSecurity: false
+  sSHD:
+    port: -1
+  scriptApproval:
+    approvedSignatures:
+    - "field hudson.model.Slave name"
+    - "method hudson.model.Cause getShortDescription"
+    - "method hudson.model.Cause$UpstreamCause getUpstreamCauses"
+    - "method hudson.model.Cause$UpstreamCause getUpstreamProject"
+    - "method hudson.model.Cause$UserIdCause getUserId"
+    - "method hudson.model.Cause$UserIdCause getUserName"
+    - "method hudson.model.Hudson getSlaves"
+    - "method hudson.model.Run getCause java.lang.Class"
+    - "method hudson.model.Run getCauses"
+    - "method hudson.model.Slave getLauncher"
+    - "method org.jenkinsci.plugins.workflow.support.steps.build.RunWrapper getRawBuild"
+    - "new java.util.GregorianCalendar"
+    - "staticMethod hudson.model.Hudson getInstance"
+    - "staticMethod hudson.util.Secret fromString java.lang.String"
+unclassified:
+  bitbucketEndpointConfiguration:
+    endpoints:
+    - bitbucketCloudEndpoint:
+        enableCache: false
+        manageHooks: false
+        repositoriesCacheDuration: 0
+        teamCacheDuration: 0
+  buildDiscarders:
+    configuredBuildDiscarders:
+    - "jobBuildDiscarder"
+  buildStatusConfig:
+    dbVersion: 2
+    enableGithub: true
+    enableHttp: false
+    enableInfluxDb: false
+    enableStatsd: false
+    httpVerifySSL: false
+    ignoreSendingTestCoverageToInflux: false
+    ignoreSendingTestResultsToInflux: true
+    statsdMaxSize: "1400"
+    statsdPort: "8125"
+  buildStepOperation:
+    enabled: false
+  claimConfig:
+    blockAutoRefreshWhileClaiming: false
+    propagateToFollowingBuildsByDefault: false
+    sendEmails: false
+    sortUsersByFullName: false
+    stickyByDefault: true
+  defaultFolderConfiguration:
+    healthMetrics:
+    - worstChildHealthMetric:
+        recursive: true
+  dependencyGraphProperty:
+    editFunctionInJSViewEnabled: false
+    graphRankDirection: "TB"
+    graphvizEnabled: true
+    projectNameStripRegex: ".*"
+    projectNameStripRegexGroup: 1
+    projectNameSuperscriptRegexGroup: -1
+  email-ext:
+    adminRequiredForTemplateTesting: false
+    allowUnregisteredEnabled: false
+    charset: "UTF-8"
+    debugMode: false
+    defaultBody: |-
+      $PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:
+
+      Check console output at $BUILD_URL to view the results.
+    defaultContentType: "text/plain"
+    defaultSubject: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!"
+    defaultTriggerIds:
+    - "hudson.plugins.emailext.plugins.trigger.FailureTrigger"
+    mailAccount:
+      address: "address not configured yet <nobody@nowhere>"
+      smtpPassword: "{AQAAABAAAAAQmODARFUtwqPRselh2/JkQind+S1lfd+d3MfBmE3PYhI=}"
+    maxAttachmentSize: -1
+    maxAttachmentSizeMb: -1
+    precedenceBulk: false
+    smtpPassword: "{AQAAABAAAAAQmODARFUtwqPRselh2/JkQind+S1lfd+d3MfBmE3PYhI=}"
+    watchingEnabled: false
+  gitHubConfiguration:
+    apiRateLimitChecker: ThrottleForNormalize
+  gitHubPluginConfig:
+    hookUrl: "https://jenkins.mdh.coo.devops.rockwell.com/github-webhook/"
+  gitLabConnectionConfig:
+    connections:
+    - clientBuilderId: "autodetect"
+      connectionTimeout: 10
+      ignoreCertificateErrors: false
+      readTimeout: 10
+  gitSCM:
+    allowSecondFetch: false
+    createAccountBasedOnEmail: false
+    disableGitToolChooser: false
+    hideCredentials: false
+    showEntireCommitSummaryInChanges: false
+    useExistingAccountWithSameEmail: false
+  globalLibraries:
+    libraries:
+    - defaultVersion: "master"
+      name: "DLSharedLib"
+      retriever:
+        modernSCM:
+          scm:
+            git:
+              credentialsId: "5ad6f459-0e26-40c6-a8be-3c7a4fc0226a"
+              id: "8af17c75-1361-48dd-9ac3-24c59cec1092"
+              remote: "https://ragitlabegl3.ra.rockwell.com/cvb/dae_cmtool/dlsharedlib.git"
+              traits:
+              - "gitBranchDiscovery"
+  globalSettings:
+    failOnCorrupt: false
+    noAuthors: false
+    quietMode: false
+  groovy:
+    installations:
+    - home: "C:\\programs\\groovy-2.3.3"
+      name: "groovy233"
+    - name: "Groovy"
+      properties:
+      - installSource:
+          installers:
+          - groovyInstaller:
+              id: "3.0.5"
+  groovyScriptMES:
+    secureOnly: false
+  ivyBuildTrigger:
+    extendedVersionMatching: false
+  junitTestResultStorage:
+    storage: "file"
+  location:
+    adminAddress: "address not configured yet <nobody@nowhere>"
+    url: "https://jenkins.mdh.coo.devops.rockwell.com/"
+  logParser:
+    legacyFormatting: false
+  mailer:
+    charset: "UTF-8"
+    useSsl: false
+    useTls: false
+  mavenModuleSet:
+    localRepository: "default"
+  naginatorPublisher:
+    regexpTimeoutMs: 30000
+  pViewProjectProperty:
+    treeSplitChar: "-"
+  pollSCM:
+    pollingThreadCount: 10
+  prometheusConfiguration:
+    collectingMetricsPeriodInSeconds: 120
+    countAbortedBuilds: true
+    countFailedBuilds: true
+    countNotBuiltBuilds: true
+    countSuccessfulBuilds: true
+    countUnstableBuilds: true
+    defaultNamespace: "default"
+    fetchTestResults: true
+    jobAttributeName: "jenkins_job"
+    path: "prometheus"
+    processingDisabledBuilds: false
+    useAuthenticatedEndpoint: false
+  remoteBuildConfiguration:
+    remoteSites:
+    - address: "https://10.224.112.95:443"
+      auth2:
+        TokenAuth:
+          apiToken: "110728a04633b1835800e9d5e6179068df"
+          userName: "SDA-grp-ap-autobuild"
+      displayName: "CMJenkins"
+    - address: "https://avcnsdaklocsvr.ra-int.com:443"
+      auth2:
+        TokenAuth:
+          apiToken: "11ab119c5826b70ac0d8398efe4ed1f4a5"
+          userName: "SDA-grp-ap-autobuild"
+      displayName: "KlocworkJenkins"
+    - address: "https://euplkcecmbld.ra-int.com/"
+      auth2:
+        CredentialsAuth:
+          credentials: "b8279697-c86f-45c9-aa1e-4d811b7be976"
+      displayName: "EDaaSJenkins"
+  timestamper:
+    allPipelines: false
+    elapsedTimeFormat: "'<b>'HH:mm:ss.S'</b> '"
+    systemTimeFormat: "'<b>'HH:mm:ss'</b> '"
+  triggering:
+    globalUpstreamFilterStrategy: UseOldest
+  whitelist:
+    enabled: false
+tool:
+  cmakeTool:
+    installations:
+    - name: "InSearchPath"
+  git:
+    installations:
+    - home: "git.exe"
+      name: "Default"
+  groovyInstallation:
+    installations:
+    - home: "C:\\programs\\groovy-2.3.3"
+      name: "groovy233"
+    - name: "Groovy"
+      properties:
+      - installSource:
+          installers:
+          - groovyInstaller:
+              id: "3.0.5"
+  vsTestInstallation:
+    installations:
+    - home: "vstest.console.exe"
+      name: "Default"
