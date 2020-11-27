@@ -8,9 +8,3 @@ credentials:
           password: "{AQAAABAAAAAgiSbizQh1chvbmElDz7vVpoX21Zk/rNHRGbWolz1tvvZtP1Cx6xknxF+ozjOfWNrd}"
           scope: GLOBAL
           username: "KYang14"
-      - usernamePassword:
-          description: "Virgil Yang Test"
-          id: "a7d6c99e-ed4b-4f0f-8fe5-2142f02523c7"
-          password: "{AQAAABAAAAAgiSbizQh1chvbmElDz7vVpoX21Zk/rNHRGbWolz1tvvZtP1Cx6xknxF+ozjOfWNrd}"
-          scope: GLOBAL
-          username: "KYang14"
